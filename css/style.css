@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/** Navigation bar **/
+
+.logo {
+    color: #58595b;
+}
+
+.logo span {
+    color: #ED1E79;
+    font-weight: 900;
+}
+
+.logo-highlight {
+    color: #ED1E79;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    width: 1700px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.navigation {
+    position: fixed;
+    top: 0%;
+    width: 95%;
+}
+
+.navigation li {
+    float: right;
+    text-align: right;
+    padding: 10px;
+    list-style-type: none;
+}
+
+
+.navigation li a {
+    color: #58595b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+nav li a:hover {
+    color: #ED1E79;
+}
+
+/** Hero **/
+
+.hero {
+    background-image: url(../assets/ozio_office_bw.jpg);
+    background-size: cover;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 190px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/** Introduction **/
+
+.introduction {
+    background-color: #ED1E79;
+    background-size: cover;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.introduction h1 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 65px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 3.5px;
+    line-height: 80px;
+}
+
+#line1::after {
+    content: "\a";
+    white-space: pre;
+}
+
+#line2::before {
+    content: "\a";
+    white-space: pre;
+}
+
+.introduction h2 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4.5px;
+    line-height: 15px;
+}
+
+/** portfolio line 1 (flex + block positioning) **/
+
+img {
+    margin-top: 120px;
+    width: 30%;
+}
+
+.portfolio1 {
+    background-color: #ED1E79;
+    background-size: cover;
+    margin: 0%;
+}
+
+.images1 {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titles1 {
+    color: white;
+}
+
+.titles1 h3 {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.title1 {
+    position: block;
+    margin-left: 185px;
+}
+
+.title2 {
+    position: block;
+    margin-left: 345px;
+}
+
+.title3 {
+    position: block;
+    margin-left: 315px;
+}
+
+.buttons1 {
+    position: relative;
+    margin-top: -15px;
+}
+
+.button1 {
+    border: 1px solid white;
+    border-radius: 13px;
+    background-color: #ED1E79;
+    padding: 12px 40px;
+    color: white;
+    font-weight: 700;
+    margin-left: 245px;
+}
+
+.button2 {
+    border: 1px solid white;
+    border-radius: 13px;
+    background-color: #ED1E79;
+    padding: 12px 40px;
+    color: white;
+    font-weight: 700;
+    margin-left: 470px;
+}
+
+.button3 {
+    border: 1px solid white;
+    border-radius: 13px;
+    background-color: #ED1E79;
+    padding: 12px 40px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    margin-left: 467px;
+}
+
+/** portfolio line 2 (flex + gird positioning) **/
+
+.portfolio2 {
+    background-color: #ED1E79;
+    background-size: cover;
+    margin: 0%;
+}
+
+.images2 {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titles2 {
+    color: white;
+    display:inline-grid;
+    grid-template-columns: 590px 590px 590px;
+    justify-items: center;
+
+}
+
+.titles2 h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.buttons2 {
+    display: inline-grid;
+    grid-template-columns: 590px 590px 590px;
+    justify-items: center;
+    margin-top: -15px;
+    
+}
+
+.button4 {
+    border: 1px solid white;
+    border-radius: 13px;
+    background-color: #ED1E79;
+    padding: 12px 40px;
+    color: white;
+    font-weight: 700;
+}
+
+.button5 {
+    border: 1px solid white;
+    border-radius: 13px;
+    background-color: #ED1E79;
+    padding: 12px 40px;
+    color: white;
+    font-weight: 700;
+}
+
+.button6 {
+    border: 1px solid white;
+    border-radius: 13px;
+    background-color: #ED1E79;
+    padding: 12px 40px;
+    color: white;
+    font-weight: 700;
+}
+
+/** services **/
+
+.services {
+    background-color: #ED1E79;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.services h1 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 65px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 3.5px;
+    line-height: 80px;
+}
+
+.services h2 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 4.5px;
+    line-height: 15px;
+}
+
+.service-intro {
+    margin-top: 200px;
+}
+
+.service-list {
+    margin-top: 100px;
+}
+
+/** contact **/
+
+.contact {
+    background-color: #ED1E79;
+    background-size: cover;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact-intro {
+    margin-top: 250px;
+    text-align: center;
+    line-height: 15px;
+    
+}
+
+.contact-intro h1 {
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.contact-intro h1 span{
+    font-weight: 900;
+}
+
+.contact-intro h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.button7 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid #58595b;
+    border-radius: 13px;
+    background-color: #58595b;
+    padding: 12px 25px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/** footer **/
+
+footer {
+    background-color: #ED1E79;
+    background-size: cover;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    font-size: 10px;
+}
+
+.copyright {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
