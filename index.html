@@ -1,193 +1,24 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Assignment 1 - Hye Won Kang</title>
+    <title>Responsive Navigation Bar - Hye Won Kang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-
     <header>
-        <!--Navigation Bar-->
-        <div class="wrapper">
-            <nav class="navigation">
-                <ul>
-                    <li><a href="index.html#firstSection">HOME</a></li>
-                    <li><a href="index.html#secondSection">HIGH SCORES</a></li>
-                    <li><a href="index.html#thirdSection">HOW TO PLAY</a></li>
-                    <li><a href="index.html#fourthSection">PLAYERS</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav id="nav">
+            <ul class="menu">
+                <li class="menu-icon" onclick="toggleMenu()"><a href=#><i class="fa fa-bars"></i></a></li>
+                <li class="menu-home"><a href="#">Home</a></li>
+                <li class="menu-about"><a href="#">About</a></li>
+                <li class="menu-contact"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!--Home Section-->
-    <section class="Home" id="firstSection">
-
-        <div class="packmanLogo">
-            <img class="mainLogo" src=" assets/Pac_man_logo.png" alt="logo">
-        </div>
-
-        <div class="homeImages">
-            <img class="pacmanLeft" src="assets/Pacman-moving.gif" alt="pacman1">
-            <img class="pinky" src="assets/Pinky.png" alt="pinky1">
-            <img class="inky" src="assets/Inky.png" alt="inky1">
-            <img class="blinky" src="assets/Blinky.png" alt="blinky1">
-            <img class="clyde" src="assets/Clyde.png" alt="clyde1">
-        </div>
-
-        <div class=insertCoin>
-            <h1>INSERT COINS</h1>
-        </div>
-
-    </section>
-
-    <!--High Score Section-->
-    <section class="highScores" id="secondSection">
-
-        <div class="section2">
-            <h1 class="ready">READY!</h1>
-            <h1 class="bestPlayers">THE 10 BEST PLAYERS</h1>
-        </div>
-
-        <li class="high-scores-text">
-            <div class="rank1">RANK</div>
-            <div class="score1">SCORE</div>
-            <div class="initials1">INITIALS</div>
-        </li>
-
-        <ul>
-            <li class="high-scores">
-                <div class="rank">1ST</div>
-                <div class="score">10,000</div>
-                <div class="initials">JRB</div>
-            </li>
-            <li class="high-scores">
-                <div class="rank">2ND</div>
-                <div class="score">9,950</div>
-                <div class="initials">LAB</div>
-            </li>
-            <li class="high-scores">
-                <div class="rank">3RD</div>
-                <div class="score">9,000</div>
-                <div class="initials">CJB</div>
-            </li>
-            <li class="high-scores">
-                <div class="rank">4TH</div>
-                <div class="score">8,750</div>
-                <div class="initials">KED</div>
-            </li>
-            <li class="high-scores">
-                <div class="rank">5TH</div>
-                <div class="score">8,500</div>
-                <div class="initials">JBB</div>
-            </li>
-            <li class="high-scores">
-                <div class="rank">6TH</div>
-                <div class="score">7,750</div>
-                <div class="initials">SBB</div>
-            </li>
-            <li class="high-scores">
-                <div class="rank">7TH</div>
-                <div class="score">7,250</div>
-                <div class="initials">MLB</div>
-            </li>
-            <li class="high-scores">
-                <div class="rank">8TH</div>
-                <div class="score">6,850</div>
-                <div class="initials">AGD</div>
-            </li>
-            <li class="high-scores">
-                <div class="rank">9TH</div>
-                <div class="score">6,500</div>
-                <div class="initials">KAD</div>
-            </li>
-            <li class="high-scores">
-                <div class="rank10">10TH</div>
-                <div class="score10">6,250</div>
-                <div class="initials10">BOB</div>
-            </li>
-
-        </ul>
-
-    </section>
-
-    <!--How To Play Section-->
-    <section class="HowToPlay" id="thirdSection">
-        <div class="HTPImages">
-            <img class="pacmanRight" src="assets/Pacman-moving.gif" alt="pacman2">
-            <img class="eaten1" src="assets/Eaten.png" alt="BlueGhost1">
-            <img class="eaten1" src="assets/Eaten.png" alt="BlueGhost1">
-            <img class="eaten1" src="assets/Eaten.png" alt="BlueGhost1">
-            <img class="eaten1" src="assets/Eaten.png" alt="BlueGhost1">
-        </div>
-
-        <div class="HTPdscription">
-            <h1 class="HTP">HOW TO PLAY</h1>
-            <p class="discription">simply score as many points as you <br> can eating the small dots all around <br> the
-                maze. 10 points per dot (240 of <br> them). Big points come when you eat 1 <br> of the 4 Big flashing
-                dots called <br> Energizers worth 50 points located in <br> each corner of the maze.</p>
-        </div>
-
-    </section>
-
-    <!--Players Section-->
-    <section class="players" id="fourthSection">
-        <div class="playersInformation">
-            <h1>PLAYERS</h1>
-            <h1>CHARACTER / NICKNAME</h1>
-        </div>
-
-        <div class="allAboutChracters">
-            <div class="characters">
-                <img class="shadow" src="assets/Blinky.png" alt="blinky2">
-                <img class="speedy" src="assets/Pinky.png" alt="pinky2">
-                <img class="bashful" src="assets/Inky.png" alt="inky2">
-                <img class="pokey" src="assets/Clyde.png" alt="clyde2">
-            </div>
-            <div class="names">
-                <h2>-SHADOW</h2>
-                <h2>-SPEEDY</h2>
-                <h2>-BASHFUL</h2>
-                <h2>-POKEY</h2>
-            </div>
-            <div class="nickNames">
-                <h2>"BLINKY"</h2>
-                <h2>"PINKY"</h2>
-                <h2>"INKY"</h2>
-                <h2>"CLYDE"</h2>
-            </div>
-        </div>
-
-        <div class="points">
-            <div class="highest-point">
-                <h1 class="point">200 PTS</h1>
-                <img class="eaten2" src="assets/Eaten.png" alt="BlueGhost2">
-                <img class="eaten2" src="assets/Eaten.png" alt="BlueGhost2">
-                <img class="eaten2" src="assets/Eaten.png" alt="BlueGhost2">
-            </div>
-
-            <div class="fifty-point">
-                <h1 class="point">50 PTS</h1>
-                <div class="bigBox"></div>
-            </div>
-
-            <div class="ten-point">
-                <h1 class="point">10 PTS</h1>
-                <div class="smallBox"></div>
-            </div>
-        </div>
-
-    </section>
-
-    <footer>
-        <h5>THIS SITE HAS NO AFFIKIATION WITH THE ACTUAL PACMAN GAME</h5>
-    </footer>
-
 </body>
-
+<script type="text/javascript" src="main.js"></script>
 </html>
