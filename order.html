@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website - Hye Won Kang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <ul class="menu">
+                <li class="menu-icon" onclick="toggleMenu()"><a href=#><i class="fa fa-bars"></i></a></li>
+                <li class="menu-home"><a href="./index.html">Home</a></li>
+                <li class="menu-order"><a href="./order.html">Order</a></li>
+                <li class="menu-about"><a href="./about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--For details page, I put an order form because since I created a website for a donut shop, there was no many things to put in this page-->
+    <section class="section-order">
+        <h1 class="order-title">Online Order</h1>
+        <br>
+        <p class="order-subtitle"> Want to skip the line?<br>Pre-order online for next day pickup or delievery!</p>
+
+        <div class="order-form">
+            <br>
+            <h1 class="order-form-menu">Pink Suger's Signiture Donut</h1>
+            <img class="order-form-img" src="assets/signiture donut.jpg" alt=signiture-donut">
+            <br>
+
+            <p class="order-form-price">$5</p>
+
+            <div class="order-form-topping">
+                <lable for="topping">Choose your topping : </lable>
+                <br>
+                <input type="radio" name="topping-1" value="chocolate">Chocolate
+                <input type="radio" name="topping-2" value="caramel">Caramel
+                <input type="radio" name="topping-3" value="strawberry">Strawberry
+                <input type="radio" name="topping-4" value="suger">Pink Suger
+                <br>
+            </div>
+
+            <div class="order-form-buttons">
+                <lable for="qtybox">Qty : </lable>
+                <input class="order-form-qtybox" id="Qty" type="number" min="1" max="10">
+                <br>
+                <button class="order-form-add">Add to your cart</button>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-description"></section>
+    <br>
+    <p class="order-description-hours">Ordering Hours:<br>Monday to Sunday | 9:00am - 9:00pm</p>
+    </section>
+
+    <section class="section-footer">
+        <div class="footer">
+            <footer>© 2022 Pink Suger Dessert Cafe. All rights reserved</footer>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="main.js"></script>
+
+</html>

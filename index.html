@@ -1,24 +1,74 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navigation Bar - Hye Won Kang</title>
+    <title>Responsive Website - Hye Won Kang</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <nav id="nav">
             <ul class="menu">
                 <li class="menu-icon" onclick="toggleMenu()"><a href=#><i class="fa fa-bars"></i></a></li>
-                <li class="menu-home"><a href="#">Home</a></li>
-                <li class="menu-about"><a href="#">About</a></li>
-                <li class="menu-contact"><a href="#">Contact</a></li>
+                <li class="menu-home"><a href="./index.html">Home</a></li>
+                <li class="menu-order"><a href="./order.html">Order</a></li>
+                <li class="menu-about"><a href="./about.html">About Us</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="hero">
+        <h1>Pink Suger<br>Dessert Cafe</h1>
+    </div>
+
+    <!--All images that I used are from unsplash.com (no copyright)-->
+    <section class="section-service">
+        <div class="service">
+            <h2 class="service-introduction">Welcome to Pink Suger</h2>
+            <br>
+            <p class="service-description">Our donuts are full of flavour and they go with just about anything.<br>You
+                will love a few donuts with coffee, as an appetizer, as a snack.</p>
+
+            <div class="service-product-1">
+                <img class="product-1-img" src="assets/product-1.jpg" alt="product1">
+                <h3 class="product-1-name">Suger Donut</h3>
+            </div>
+            <div class="service-product-2">
+                <img class="product-2-img" src="assets/product-2.jpg" alt="product2">
+                <h3 class="product-2-name">Suger Icecream</h3>
+            </div>
+            <div class="service-product-3">
+                <img class="product-3-img" src="assets/product-3.jpg" alt="product3">
+                <h3 class="product-3-name">Suger Milkshake</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-gallery">
+        <h2 class="gallery-menu">Menu</h2>
+        <div class="gallery-items">
+            <img class="donuts" src="assets/donut-1.jpg" alt="donut1">
+            <img class="donuts" src="assets/donut-2.jpg" alt="donut2">
+            <img class="donuts" src="assets/donut-3.jpg" alt="donut3">
+            <img class="donuts" src="assets/donut-4.jpg" alt="donut4">
+            <img class="donuts" src="assets/donut-5.jpg" alt="donut5">
+            <img class="donuts" src="assets/donut-6.jpg" alt="donut6">
+        </div>
+    </section>
+
+    <section class="section-footer">
+        <div class="footer">
+            <footer>© 2022 Pink Suger Dessert Cafe. All rights reserved</footer>
+        </div>
+    </section>
 </body>
+
 <script type="text/javascript" src="main.js"></script>
+
 </html>
